@@ -15,7 +15,7 @@ This directory contains detailed installation instructions for the GitHub MCP Se
 |-----------------|---------------|----------------|---------------|------------|
 | Copilot in VS Code | ✅ | ✅ Full (OAuth + PAT) | Local: Docker or Go build, GitHub PAT<br>Remote: VS Code 1.101+ | Easy |
 | Copilot Coding Agent | ✅ | ✅ Full (on by default; no auth needed) | Any _paid_ copilot license | Default on |
-| Copilot in Visual Studio | ✅ | ✅ PAT + ❌ No OAuth | Local: Docker or Go build, GitHub PAT<br>Remote: Visual Studio 17.14+ | Easy |
+| Copilot in Visual Studio | ✅ | ✅ Full (OAuth + PAT) | Local: Docker or Go build, GitHub PAT<br>Remote: Visual Studio 17.14+ | Easy |
 | Copilot in JetBrains | ✅ | ✅ Full (OAuth + PAT) | Local: Docker or Go build, GitHub PAT<br>Remote: JetBrains Copilot Extension v1.5.53+ | Easy |
 | Claude Code | ✅ | ✅ PAT + ❌ No OAuth| GitHub MCP Server binary or remote URL, GitHub PAT | Easy |
 | Claude Desktop | ✅ | ✅ PAT + ❌ No OAuth | Docker or Go build, GitHub PAT | Moderate |
