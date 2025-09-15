@@ -41,7 +41,8 @@ func DefaultToolsetGroup(readOnly bool, getClient GetClientFn, getGQLClient GetG
 			toolsets.NewServerTool(CreateRepository(getClient, t)),
 			toolsets.NewServerTool(ForkRepository(getClient, t)),
 			toolsets.NewServerTool(CreateBranch(getClient, t)),
-			toolsets.NewServerTool(PushFiles(getClient, t)),
+			toolsets.NewServerTool(PushFiles(getClient, t
+			toolsets.NewServerTool(DeleteFile(getClient, t)),
 			toolsets.NewServerTool(DeleteFile(getClient, t)),
 			toolsets.NewServerTool(StarRepository(getClient, t)),
 			toolsets.NewServerTool(UnstarRepository(getClient, t)),
@@ -66,6 +67,7 @@ func DefaultToolsetGroup(readOnly bool, getClient GetClientFn, getGQLClient GetG
 			toolsets.NewServerTool(CreateIssue(getClient, t)),
 			toolsets.NewServerTool(AddIssueComment(getClient, t)),
 			toolsets.NewServerTool(UpdateIssue(getClient, getGQLClient, t)),
+			toolsets.NewServerTool(UpdateIssueComment(getClient, t)),
 			toolsets.NewServerTool(AssignCopilotToIssue(getGQLClient, t)),
 			toolsets.NewServerTool(AddSubIssue(getClient, t)),
 			toolsets.NewServerTool(RemoveSubIssue(getClient, t)),
@@ -90,6 +92,7 @@ func DefaultToolsetGroup(readOnly bool, getClient GetClientFn, getGQLClient GetG
 			toolsets.NewServerTool(SearchPullRequests(getClient, t)),
 			toolsets.NewServerTool(GetPullRequestStatus(getClient, t)),
 			toolsets.NewServerTool(GetPullRequestReviewComments(getClient, t)),
+			toolsets.NewServerTool(UpdatePullRequestComment(getClient, t)),
 			toolsets.NewServerTool(GetPullRequestReviews(getClient, t)),
 			toolsets.NewServerTool(GetPullRequestDiff(getClient, t)),
 		).
